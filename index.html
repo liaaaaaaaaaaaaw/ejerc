@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let der=1
+        let iz=100
+        while (der<=iz){
+            let medio=parseInt((der+iz)/2)
+            console.log("Tienes mas de "+medio+" piedras?")
+            let res=prompt("")
+            if (res==="si"){
+                der=medio+1
+            }else{
+                iz=medio
+            }
+            if(der===iz){
+                console.log("Tu numero es "+iz)
+                break
+            }
+        }
+        
+    </script>
+</body>
+</html>
